@@ -1,0 +1,8 @@
+{
+    "chains":[
+        {
+            "name": "destream",
+            "richlist":["address1", "address2"]
+        }
+    ]
+}
