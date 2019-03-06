@@ -1,4 +1,4 @@
-# ui
+# Block Explore 
 
 ## Project setup
 ```
