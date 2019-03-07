@@ -1,7 +1,53 @@
 {
     "chains":[
         {
-            "name": "destream",
+            "name": "DeStream",
+            "totalSupply": "6,000,000,000",
+            "symbol": "DST",
+            "blockTime": "64 secs",
+            "consensus": "PoS",
+            "iconUrl": "https://destream.io/img/logo.png", 
+            "hostedUrl": "http://destream.blockexplore.co",
+            "richlist":["address1", "address2"]
+        },
+        {
+            "name": "Stratis",
+            "totalSupply": "98,000,000",
+            "symbol": "STRAT",
+            "blockTime": "64 secs",
+            "consensus": "PoS",
+            "iconUrl": "https://assets.coingecko.com/coins/images/531/large/stratis.png?1547034209", 
+            "hostedUrl": "http://142.93.35.42:9040",
+            "richlist":["address1", "address2"]
+        },
+        {
+            "name": "Stratis Testnet",
+            "totalSupply": "98,000,000",
+            "symbol": "TSTRAT",
+            "blockTime": "64 secs",
+            "consensus": "PoS",
+            "iconUrl": "https://res.cloudinary.com/teepublic/image/private/s--kENtkUAq--/t_Preview/b_rgb:ffffff,c_limit,f_jpg,h_630,q_90,w_630/v1513584696/production/designs/2192285_1.jpg", 
+            "hostedUrl": "http://209.97.177.144:9040",
+            "richlist":["address1", "address2"]
+        },
+        {
+            "name": "bitcoin",
+            "totalSupply": "21,000,000",
+            "symbol": "BTC",
+            "blockTime": "10 mins",
+            "consensus": "PoW",
+            "iconUrl": "https://bitcoin.org/img/icons/logotop.svg", 
+            "hostedUrl": null,
+            "richlist":["address1", "address2"]
+        },
+        {
+            "name": "litecoin",
+            "totalSupply": "84,000,000",
+            "symbol": "LTC",
+            "blockTime": "2 mins",
+            "consensus": "PoW",
+            "iconUrl": "https://99bitcoins.com/wp-content/uploads/2013/12/litecoin-logo-300x300.png", 
+            "hostedUrl": null,
             "richlist":["address1", "address2"]
         }
     ]

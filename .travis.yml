@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+- 8.9.4
+branches:
+  only:
+  - master
+services:
+- docker
+before_script: 
+script:
+- npm i
+- npm run build
+deploy:
+  provider: firebase
+  token:
+    secure: A6lmV55Sdjt44StEzThoeIlhiCiGjhKNB5AwiKpWw9F4D68upqUasBC+eNvxLs9DFTCRaNj8cGmiiGsYf53eorlg9cGITeA/ml7ekqTy4uO3wfsgy9g3/4JGSjuT9udOU/7HCjhyzq0HWoyHE61x25viv9Zsjj+5TnYsNAbHyE+bBs+MaX3fCeD4kmhhZewArB16I+J9eN4Ihm8kbGzT3R7lesHOmWBPskS+1V6NqMwjBmbXD8qivPLB3xqVqcrWDo6pivSBRkeX+ez95QfDJl2dBMqNJMOhKndUFXAhqYIonhsfJd/AhjycfptbFGOSnWhEQLywZkEFC3Z+LkqMnAcL8eCvuHQKKB8W0Qc/fxr3SStUMiz/SQfTJN71Ocn6T9PYUGxb0dH/TvhujTQ0esNSivL5+wCkMNwj88NA2XF2Ns4I0DehbEiRrdSFIb0fRu1NCxfEvf5Xe3KuPH/qva7s0Gh4Kfr4NJu195sy40wki8MSNr8U24cxb6Zf+WMf/Oy0nj4VaN8OFiLPJvKctaXMbc/UOxQ3jpiXVb9YKXh77oMyasE8JnNDjNg2skdR0JCjWw70G8iElHjuyZo/lhHwFr+2bD+08YCVWwulxN1MImjvf6Qfdm0jPBhnqmqEwZzuHYcoWuQ/1tdtZLTV3Xm0acZL+WvGDm9w2buIWRI=
+  local_dir: dist
+  skip-cleanup: true
+  project: blockexplore
+  keep-history: true
+  on:
+    branch: master
